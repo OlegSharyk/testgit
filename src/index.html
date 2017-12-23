@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>Bank Product</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+
+    <link rel="stylesheet" href="css/all.css" />
+
+</head>
+<body>
+<div class="wrap line">
+    <aside class="aside">
+        <div class="holder">
+            <h1 class="logo"><a href="BANK_dashboard.html">BANK LOGO</a></h1>
+            <h2 class="ttl">Product Catalogue</h2>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li><a href="BANK_dashboard.html"><i class="ico iconfont-menu-dashboard"></i>Dashboard</a></li>
+                <li class="active"><a href="BANK_Products.html"><i class="ico iconfont-menu-products"></i>Products</a></li>
+                <li><a href="BANK_Hierarchies_list.html"><i class="ico iconfont-menu-hierarhy"></i>Hierarchies</a></li>
+                <li><a href="#"><i class="ico iconfont-menu-admin"></i>Administration</a></li>
+                <li><a href="#"><i class="ico iconfont-menu-reports"></i>Reports</a></li>
+                <li><a href="#"><i class="ico iconfont-menu-help"></i>Help</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="main">
+
+        <div class="popup jsPopupSearch">
+            <div class="search-popup" style="top:-1000px;">
+                <a href="#" class="popup-close jsSearchClose"><i class="ico iconfont-close"></i></a>
+                //= template/advanced_search.html
+            </div>
+        </div>
+
+        <div class="popup jsPopupCustomSearch">
+            <div class="popup-wrap">
+                //= template/popup-custom-search.html
+            </div>
+        </div>
+
+        //= template/header.html
+
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>Products</li>
+            </ul>
+        </div>
+
+        <section class="cnt">
+            <div class="heading line">
+                <h2>Product Bulk Update</h2>
+            </div>
+
+            <div class="steps">
+                <ul>
+                    <li class="current"><a href="#">1. Select Products</a></li>
+                    <li><a href="#">2. Select Attributes to Amend</a></li>
+                    <li><a href="#">3. Amend</a></li>
+                </ul>
+            </div>
+
+            <div class="settings line">
+
+                <ul class="nav-buttons">
+                    <li><a class="btn btn_green" href="BANK_Bulk_Update_2.html">Next &gt;&gt;</a></li>
+                </ul>
+
+                <div class="quick-filter">
+                    <form action="#">
+                        <span class="result">(10) products found, (4) selected</span>
+                        <div class="col">
+                            <!--<div class="b-input-i">-->
+                            <!--<input class="jsQuickFilter" id="name" type="text" placeholder="Filter">-->
+                            <!--</div>-->
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="filter">
+                <form action="#">
+                    <div class="row">
+                        <div class="col col-large">
+                            <label for="name">Name:</label>
+                            <div class="b-input-i">
+                                <input id="name" type="text">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <label for="status">Status:</label>
+                            <div class="b-select-i">
+                                <select class="jsSelectColor" name="" id="status">
+                                    <option value="green">Approved</option>
+                                    <option value="red">Red</option>
+                                    <option value="yellow">Yellow</option>
+                                    <option value="blue">Blue</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <label for="business-area">Business Area:</label>
+                            <div class="b-select-i">
+                                <select class="jsSelect" name="" id="business-area">
+                                    <option value="Business Area 1">Business Area 1</option>
+                                    <option value="Business Area 2">Business Area 2</option>
+                                    <option value="Business Area 3">Business Area 3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <label for="product-family">Product Family:</label>
+                            <div class="b-select-i">
+                                <select class="jsSelect" name="" id="product-family">
+                                    <option value="Product Family 1">Product Family 1</option>
+                                    <option value="Product Family 2">Product Family 2</option>
+                                    <option value="Product Family 3">Product Family 3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <label for="assignee">Assignee:</label>
+                            <div class="b-select-i">
+                                <select class="jsSelect" name="" id="assignee">
+                                    <option value="Martin Bondorff">Martin Bondorff</option>
+                                    <option value="Martin Bondor">Martin Bondor</option>
+                                    <option value="Martin Bondorff">Martin Bondorff</option>
+                                    <option value="Martin Bondor">Martin Bondor</option>
+                                    <option value="Martin Bondorff">Martin Bondorff</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <label for="country" class="b-label">Sales Country:</label>
+                            <div class="b-select-i">
+                                <select class="jsSelect" name="" id="country">
+                                    <option value="Poland">Poland</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="Germany">Denmark</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <!-- Queue Start -->
+            <div class="queue jsQueueDrag">
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                    <div class="item-cell-check">
+                        <input type="checkbox" id="interest-rate-swap1" class="b-check" checked><label for="interest-rate-swap1"></label>
+                    </div>
+                    <div class="item-cell-ttl">
+                        <span class="txt"><a href="BANK_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                    </div>
+                    <div class="item-cell-irs">
+                        <span class="txt">IRS</span>
+                    </div>
+                    <div class="item-cell-qra">
+                        <span class="txt"><span class="status approved"><i class="ico iconfont-approve"></i>Approved</span></span>
+                    </div>
+                    <div class="item-cell-date">
+                        <span class="txt">2017/01/18  07:00 AM</span>
+                    </div>
+                    <div class="item-cell-name">
+                        <span class="txt"><span class="name"><i class="ico ico_name-status"></i>John Doe</span></span>
+                    </div>
+                    <div class="item-cell-docs">
+                        <ul class="documents">
+                            <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                            <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                        </ul>
+                    </div>
+                    <div class="item-cell-set">
+                        <div class="set-menu">
+                            <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                    <div class="item-cell-check">
+                        <input type="checkbox" id="interest-rate-swap2" class="b-check" checked><label for="interest-rate-swap2"></label>
+                    </div>
+                    <div class="item-cell-ttl">
+                        <span class="txt"><a href="BANK_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                    </div>
+                    <div class="item-cell-irs">
+                        <span class="txt">IRS</span>
+                    </div>
+                    <div class="item-cell-qra">
+                        <span class="txt"><span class="status approved"><i class="ico iconfont-approve"></i>Approved</span></span>
+                    </div>
+                    <div class="item-cell-date">
+                        <span class="txt">2017/01/18  07:00 AM</span>
+                    </div>
+                    <div class="item-cell-name">
+                        <span class="txt"><span class="name"><i class="ico ico_name-status"></i>John Doe</span></span>
+                    </div>
+                    <div class="item-cell-docs">
+                        <ul class="documents">
+                            <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                            <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                        </ul>
+                    </div>
+                    <div class="item-cell-set">
+                        <div class="set-menu">
+                            <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                    <div class="item-cell-check">
+                        <input type="checkbox" id="interest-rate-swap3" class="b-check" checked><label for="interest-rate-swap3"></label>
+                    </div>
+                    <div class="item-cell-ttl">
+                        <span class="txt"><a href="BANK_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                    </div>
+                    <div class="item-cell-irs">
+                        <span class="txt">IRS</span>
+                    </div>
+                    <div class="item-cell-qra">
+                        <span class="txt"><span class="status approved"><i class="ico iconfont-approve"></i>Approved</span></span>
+                    </div>
+                    <div class="item-cell-date">
+                        <span class="txt">2017/01/18  07:00 AM</span>
+                    </div>
+                    <div class="item-cell-name">
+                        <span class="txt"><span class="name"><i class="ico ico_name-status"></i>John Doe</span></span>
+                    </div>
+                    <div class="item-cell-docs">
+                        <ul class="documents">
+                            <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                            <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                        </ul>
+                    </div>
+                    <div class="item-cell-set">
+                        <div class="set-menu">
+                            <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                    <div class="item-cell-check">
+                        <input type="checkbox" id="interest-rate-swap4" class="b-check" checked><label for="interest-rate-swap4"></label>
+                    </div>
+                    <div class="item-cell-ttl">
+                        <span class="txt"><a href="BANK_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                    </div>
+                    <div class="item-cell-irs">
+                        <span class="txt">IRS</span>
+                    </div>
+                    <div class="item-cell-qra">
+                        <span class="txt"><span class="status approved"><i class="ico iconfont-approve"></i>Approved</span></span>
+                    </div>
+                    <div class="item-cell-date">
+                        <span class="txt">2017/01/18  07:00 AM</span>
+                    </div>
+                    <div class="item-cell-name">
+                        <span class="txt"><span class="name"><i class="ico ico_name-status"></i>John Doe</span></span>
+                    </div>
+                    <div class="item-cell-docs">
+                        <ul class="documents">
+                            <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                            <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                        </ul>
+                    </div>
+                    <div class="item-cell-set">
+                        <div class="set-menu">
+                            <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                    <div class="item-cell-check">
+                        <input type="checkbox" id="interest-rate-swap5" class="b-check" checked><label for="interest-rate-swap5"></label>
+                    </div>
+                    <div class="item-cell-ttl">
+                        <span class="txt"><a href="BANK_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                    </div>
+                    <div class="item-cell-irs">
+                        <span class="txt">IRS</span>
+                    </div>
+                    <div class="item-cell-qra">
+                        <span class="txt"><span class="status approved"><i class="ico iconfont-approve"></i>Approved</span></span>
+                    </div>
+                    <div class="item-cell-date">
+                        <span class="txt">2017/01/18  07:00 AM</span>
+                    </div>
+                    <div class="item-cell-name">
+                        <span class="txt"><span class="name"><i class="ico ico_name-status"></i>John Doe</span></span>
+                    </div>
+                    <div class="item-cell-docs">
+                        <ul class="documents">
+                            <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                            <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                        </ul>
+                    </div>
+                    <div class="item-cell-set">
+                        <div class="set-menu">
+                            <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                    <div class="item-cell-check">
+                        <input type="checkbox" id="interest-rate-swap6" class="b-check"><label for="interest-rate-swap6"></label>
+                    </div>
+                    <div class="item-cell-ttl">
+                        <span class="txt"><a href="BANK_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                    </div>
+                    <div class="item-cell-irs">
+                        <span class="txt">IRS</span>
+                    </div>
+                    <div class="item-cell-qra">
+                        <span class="txt"><span class="status approved"><i class="ico iconfont-approve"></i>Approved</span></span>
+                    </div>
+                    <div class="item-cell-date">
+                        <span class="txt">2017/01/18  07:00 AM</span>
+                    </div>
+                    <div class="item-cell-name">
+                        <span class="txt"><span class="name"><i class="ico ico_name-status"></i>John Doe</span></span>
+                    </div>
+                    <div class="item-cell-docs">
+                        <ul class="documents">
+                            <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                            <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                        </ul>
+                    </div>
+                    <div class="item-cell-set">
+                        <div class="set-menu">
+                            <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                    <div class="item-cell-check">
+                        <input type="checkbox" id="interest-rate-swap7" class="b-check"><label for="interest-rate-swap7"></label>
+                    </div>
+                    <div class="item-cell-ttl">
+                        <span class="txt"><a href="BANK_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                    </div>
+                    <div class="item-cell-irs">
+                        <span class="txt">IRS</span>
+                    </div>
+                    <div class="item-cell-qra">
+                        <span class="txt"><span class="status approved"><i class="ico iconfont-approve"></i>Approved</span></span>
+                    </div>
+                    <div class="item-cell-date">
+                        <span class="txt">2017/01/18  07:00 AM</span>
+                    </div>
+                    <div class="item-cell-name">
+                        <span class="txt"><span class="name"><i class="ico ico_name-status"></i>John Doe</span></span>
+                    </div>
+                    <div class="item-cell-docs">
+                        <ul class="documents">
+                            <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                            <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                        </ul>
+                    </div>
+                    <div class="item-cell-set">
+                        <div class="set-menu">
+                            <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                    <div class="item-cell-check">
+                        <input type="checkbox" id="interest-rate-swap8" class="b-check"><label for="interest-rate-swap8"></label>
+                    </div>
+                    <div class="item-cell-ttl">
+                        <span class="txt"><a href="BANK_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                    </div>
+                    <div class="item-cell-irs">
+                        <span class="txt">IRS</span>
+                    </div>
+                    <div class="item-cell-qra">
+                        <span class="txt"><span class="status approved"><i class="ico iconfont-approve"></i>Approved</span></span>
+                    </div>
+                    <div class="item-cell-date">
+                        <span class="txt">2017/01/18  07:00 AM</span>
+                    </div>
+                    <div class="item-cell-name">
+                        <span class="txt"><span class="name"><i class="ico ico_name-status"></i>John Doe</span></span>
+                    </div>
+                    <div class="item-cell-docs">
+                        <ul class="documents">
+                            <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                            <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                        </ul>
+                    </div>
+                    <div class="item-cell-set">
+                        <div class="set-menu">
+                            <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                    <div class="item-cell-check">
+                        <input type="checkbox" id="interest-rate-swap9" class="b-check"><label for="interest-rate-swap9"></label>
+                    </div>
+                    <div class="item-cell-ttl">
+                        <span class="txt"><a href="BANK_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                    </div>
+                    <div class="item-cell-irs">
+                        <span class="txt">IRS</span>
+                    </div>
+                    <div class="item-cell-qra">
+                        <span class="txt"><span class="status approved"><i class="ico iconfont-approve"></i>Approved</span></span>
+                    </div>
+                    <div class="item-cell-date">
+                        <span class="txt">2017/01/18  07:00 AM</span>
+                    </div>
+                    <div class="item-cell-name">
+                        <span class="txt"><span class="name"><i class="ico ico_name-status"></i>John Doe</span></span>
+                    </div>
+                    <div class="item-cell-docs">
+                        <ul class="documents">
+                            <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                            <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                        </ul>
+                    </div>
+                    <div class="item-cell-set">
+                        <div class="set-menu">
+                            <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                    <div class="item-cell-check">
+                        <input type="checkbox" id="interest-rate-swap10" class="b-check"><label for="interest-rate-swap10"></label>
+                    </div>
+                    <div class="item-cell-ttl">
+                        <span class="txt"><a href="BANK_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                    </div>
+                    <div class="item-cell-irs">
+                        <span class="txt">IRS</span>
+                    </div>
+                    <div class="item-cell-qra">
+                        <span class="txt"><span class="status approved"><i class="ico iconfont-approve"></i>Approved</span></span>
+                    </div>
+                    <div class="item-cell-date">
+                        <span class="txt">2017/01/18  07:00 AM</span>
+                    </div>
+                    <div class="item-cell-name">
+                        <span class="txt"><span class="name"><i class="ico ico_name-status"></i>John Doe</span></span>
+                    </div>
+                    <div class="item-cell-docs">
+                        <ul class="documents">
+                            <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                            <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                        </ul>
+                    </div>
+                    <div class="item-cell-set">
+                        <div class="set-menu">
+                            <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                    <div class="item-cell-check">
+                        <input type="checkbox" id="interest-rate-swap11" class="b-check"><label for="interest-rate-swap11"></label>
+                    </div>
+                    <div class="item-cell-ttl">
+                        <span class="txt"><a href="BANK_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                    </div>
+                    <div class="item-cell-irs">
+                        <span class="txt">IRS</span>
+                    </div>
+                    <div class="item-cell-qra">
+                        <span class="txt"><span class="status approved"><i class="ico iconfont-approve"></i>Approved</span></span>
+                    </div>
+                    <div class="item-cell-date">
+                        <span class="txt">2017/01/18  07:00 AM</span>
+                    </div>
+                    <div class="item-cell-name">
+                        <span class="txt"><span class="name"><i class="ico ico_name-status"></i>John Doe</span></span>
+                    </div>
+                    <div class="item-cell-docs">
+                        <ul class="documents">
+                            <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                            <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                        </ul>
+                    </div>
+                    <div class="item-cell-set">
+                        <div class="set-menu">
+                            <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                    <div class="item-cell-check">
+                        <input type="checkbox" id="interest-rate-swap12" class="b-check"><label for="interest-rate-swap12"></label>
+                    </div>
+                    <div class="item-cell-ttl">
+                        <span class="txt"><a href="BANK_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                    </div>
+                    <div class="item-cell-irs">
+                        <span class="txt">IRS</span>
+                    </div>
+                    <div class="item-cell-qra">
+                        <span class="txt"><span class="status approved"><i class="ico iconfont-approve"></i>Approved</span></span>
+                    </div>
+                    <div class="item-cell-date">
+                        <span class="txt">2017/01/18  07:00 AM</span>
+                    </div>
+                    <div class="item-cell-name">
+                        <span class="txt"><span class="name"><i class="ico ico_name-status"></i>John Doe</span></span>
+                    </div>
+                    <div class="item-cell-docs">
+                        <ul class="documents">
+                            <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                            <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                        </ul>
+                    </div>
+                    <div class="item-cell-set">
+                        <div class="set-menu">
+                            <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Queue Item End -->
+
+            </div>
+            <!-- Queue End -->
+
+        </section>
+    </div>
+</div>
+
+<script src="js/plugins/jquery-2.2.4.min.js"></script>
+<script src="js/plugins/jquery-ui.min.js"></script>
+<script src="js/plugins/select2.min.js"></script>
+<script src="js/plugins/jquery.mCustomScrollbar.min.js"></script>
+<script src="js/plugins/jquery.mousewheel.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

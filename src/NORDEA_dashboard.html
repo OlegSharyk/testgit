@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+  <meta charset="UTF-8">
+  <title>Nordea</title>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <link rel="stylesheet" href="css/all.css" />
+
+
+</head>
+<body class="dashboard-page">
+  <div class="wrap line">
+    <aside class="aside">
+      <h1 class="logo"><a href="NORDEA_dashboard.html">Nordea</a></h1>
+      <nav>
+        <ul class="nav">
+          <li class="active"><a href="NORDEA_dashboard.html"><i class="ico iconfont-menu-dashboard"></i>Dashboard</a></li>
+          <li><a href="NORDEA_Products.html"><i class="ico iconfont-menu-products"></i>Products</a></li>
+          <li><a href="#"><i class="ico iconfont-menu-hierarhy"></i>Hierarchies</a></li>
+          <li><a href="#"><i class="ico iconfont-menu-admin"></i>Administration</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="main">
+      <div class="popup search-popup jsPopupSearch" style="top:-1000px;">
+        <a href="#" class="popup-close jsSearchClose"><i class="ico iconfont-close"></i></a>
+        //= template/advanced_search.html
+      </div>
+
+      //= template/header.html
+
+      <section class="intro">
+        <a href="#" class="intro-close jsCloseIntro"><i class="ico iconfont-close"></i> Hide Banner</a>
+        <div class="inner">
+          <div class="cnt">
+            <h2>Welcome to Nordea Product Catalogue!</h2>
+            <h3>A Golden Source of Products and Hierarchies</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="cnt">
+
+        <ul class="dashboard jsDashboard">
+          <li class="item">
+            <a href="#">
+              <span class="image">
+              <img src="img/upload.png" alt="upload" width="80" height="81">
+            </span>
+              <strong class="ttl">Upload files</strong>
+            </a>
+          </li>
+          <li class="item">
+            <a href="NORDEA_Products.html">
+              <span class="image">
+                <img src="img/products.png" alt="Products" width="67" height="80">
+              </span>
+              <strong class="ttl">Products</strong>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <span class="image">
+                <img src="img/hierarchies.png" alt="Hierarchies" width="101" height="81" >
+              </span>
+              <strong class="ttl">Hierarchies</strong>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <span class="image">
+                <img src="img/administration.png" alt="Administration" width="80" height="80">
+              </span>
+              <strong class="ttl">Administration</strong>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <span class="image">
+                <img src="img/bulk.png" alt="Bulk Update" width="65" height="84">
+              </span>
+              <strong class="ttl">Bulk Update</strong>
+            </a>
+          </li>
+        </ul>
+
+        <div class="heading">
+          <div class="settings">
+            <ul class="tools">
+              <li class="item"><a href="#"><i class="ico iconfont-customize"></i>Customize Dashboard</a></li>
+            </ul>
+          </div>
+          <h2>My Recent Products</h2>
+        </div>
+
+        <div class="tabset jsQueueTabs">
+
+          <div class="head">
+            <ul class="tabs-links">
+              <li><a href="#tabs-1">All (6)</a></li>
+              <li><a href="#tabs-2">New Requests (2)</a></li>
+              <li><a href="#tabs-3">Completed (3)</a></li>
+            </ul>
+          </div>
+
+          <div class="tabset-box">
+
+            <div id="tabs-1">
+
+              <!-- Queue Start -->
+              <div class="queue jsQueueDrag">
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                  <div class="item-cell-check">
+                    <input type="checkbox" id="interest-rate-swap01" class="b-check"><label for="interest-rate-swap01"></label>
+                  </div>
+                  <div class="item-cell-ttl">
+                    <span class="txt"><a href="NORDEA_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                  </div>
+                  <div class="item-cell-irs">
+                    <span class="txt">IRS</span>
+                  </div>
+                  <div class="item-cell-qra">
+                    <span class="txt">QRA Scheduled</span>
+                  </div>
+                  <div class="item-cell-date">
+                    <span class="txt">2017/01/18  07:00 AM</span>
+                  </div>
+                  <div class="item-cell-name">
+                    <span class="txt"><i class="ico ico_name-status"></i><a href="#">Alexandres Etchien</a></span>
+                  </div>
+                  <div class="item-cell-docs">
+                    <ul class="documents">
+                      <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                      <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                    </ul>
+                  </div>
+                  <div class="item-cell-set">
+                    <div class="set-menu">
+                      <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                  <div class="item-cell-check">
+                    <input type="checkbox" id="interest-rate-swap02" class="b-check"><label for="interest-rate-swap02"></label>
+                  </div>
+                  <div class="item-cell-ttl">
+                    <span class="txt"><a href="NORDEA_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                  </div>
+                  <div class="item-cell-irs">
+                    <span class="txt">IRS</span>
+                  </div>
+                  <div class="item-cell-qra">
+                    <span class="txt">QRA Scheduled</span>
+                  </div>
+                  <div class="item-cell-date">
+                    <span class="txt">2017/01/18  07:00 AM</span>
+                  </div>
+                  <div class="item-cell-name">
+                    <span class="txt"><i class="ico ico_name-status"></i><a href="#">Alexandres Etchien</a></span>
+                  </div>
+                  <div class="item-cell-docs">
+                    <ul class="documents">
+                      <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                      <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                    </ul>
+                  </div>
+                  <div class="item-cell-set">
+                    <div class="set-menu">
+                      <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!--Queue Item End -->
+
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                  <div class="item-cell-check">
+                    <input type="checkbox" id="interest-rate-swap03" class="b-check"><label for="interest-rate-swap03"></label>
+                  </div>
+                  <div class="item-cell-ttl">
+                    <span class="txt"><a href="NORDEA_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                  </div>
+                  <div class="item-cell-irs">
+                    <span class="txt">IRS</span>
+                  </div>
+                  <div class="item-cell-qra">
+                    <span class="txt">QRA Scheduled</span>
+                  </div>
+                  <div class="item-cell-date">
+                    <span class="txt">2017/01/18  07:00 AM</span>
+                  </div>
+                  <div class="item-cell-name">
+                    <span class="txt"><i class="ico ico_name-status"></i><a href="#">Alexandres Etchien</a></span>
+                  </div>
+                  <div class="item-cell-docs">
+                    <ul class="documents">
+                      <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                      <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                    </ul>
+                  </div>
+                  <div class="item-cell-set">
+                    <div class="set-menu">
+                      <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                  <div class="item-cell-check">
+                    <input type="checkbox" id="interest-rate-swap04" class="b-check"><label for="interest-rate-swap04"></label>
+                  </div>
+                  <div class="item-cell-ttl">
+                    <span class="txt"><a href="NORDEA_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                  </div>
+                  <div class="item-cell-irs">
+                    <span class="txt">IRS</span>
+                  </div>
+                  <div class="item-cell-qra">
+                    <span class="txt">QRA Scheduled</span>
+                  </div>
+                  <div class="item-cell-date">
+                    <span class="txt">2017/01/18  07:00 AM</span>
+                  </div>
+                  <div class="item-cell-name">
+                    <span class="txt"><i class="ico ico_name-status"></i><a href="#">Alexandres Etchien</a></span>
+                  </div>
+                  <div class="item-cell-docs">
+                    <ul class="documents">
+                      <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                      <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                    </ul>
+                  </div>
+                  <div class="item-cell-set">
+                    <div class="set-menu">
+                      <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                  <div class="item-cell-check">
+                    <input type="checkbox" id="interest-rate-swap05" class="b-check"><label for="interest-rate-swap05"></label>
+                  </div>
+                  <div class="item-cell-ttl">
+                    <span class="txt"><a href="NORDEA_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                  </div>
+                  <div class="item-cell-irs">
+                    <span class="txt">IRS</span>
+                  </div>
+                  <div class="item-cell-qra">
+                    <span class="txt">QRA Scheduled</span>
+                  </div>
+                  <div class="item-cell-date">
+                    <span class="txt">2017/01/18  07:00 AM</span>
+                  </div>
+                  <div class="item-cell-name">
+                    <span class="txt"><i class="ico ico_name-status"></i><a href="#">Alexandres Etchien</a></span>
+                  </div>
+                  <div class="item-cell-docs">
+                    <ul class="documents">
+                      <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                      <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                    </ul>
+                  </div>
+                  <div class="item-cell-set">
+                    <div class="set-menu">
+                      <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                  <div class="item-cell-check">
+                    <input type="checkbox" id="interest-rate-swap06" class="b-check"><label for="interest-rate-swap06"></label>
+                  </div>
+                  <div class="item-cell-ttl">
+                    <span class="txt"><a href="NORDEA_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                  </div>
+                  <div class="item-cell-irs">
+                    <span class="txt">IRS</span>
+                  </div>
+                  <div class="item-cell-qra">
+                    <span class="txt">QRA Scheduled</span>
+                  </div>
+                  <div class="item-cell-date">
+                    <span class="txt">2017/01/18  07:00 AM</span>
+                  </div>
+                  <div class="item-cell-name">
+                    <span class="txt"><i class="ico ico_name-status"></i><a href="#">Alexandres Etchien</a></span>
+                  </div>
+                  <div class="item-cell-docs">
+                    <ul class="documents">
+                      <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                      <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                    </ul>
+                  </div>
+                  <div class="item-cell-set">
+                    <div class="set-menu">
+                      <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!--Queue Item End -->
+
+              </div>
+              <!-- Queue End -->
+            </div>
+
+            <div id="tabs-2" >
+
+              <!-- Queue Start -->
+              <div class="queue jsQueueDrag">
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                  <div class="item-cell-check">
+                    <input type="checkbox" id="interest-rate-swap07" class="b-check"><label for="interest-rate-swap07"></label>
+                  </div>
+                  <div class="item-cell-ttl">
+                    <span class="txt"><a href="NORDEA_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                  </div>
+                  <div class="item-cell-irs">
+                    <span class="txt">IRS</span>
+                  </div>
+                  <div class="item-cell-qra">
+                    <span class="txt">QRA Scheduled</span>
+                  </div>
+                  <div class="item-cell-date">
+                    <span class="txt">2017/01/18  07:00 AM</span>
+                  </div>
+                  <div class="item-cell-name">
+                    <span class="txt"><i class="ico ico_name-status"></i><a href="#">Alexandres Etchien</a></span>
+                  </div>
+                  <div class="item-cell-docs">
+                    <ul class="documents">
+                      <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                      <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                    </ul>
+                  </div>
+                  <div class="item-cell-set">
+                    <div class="set-menu">
+                      <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                  <div class="item-cell-check">
+                    <input type="checkbox" id="interest-rate-swap08" class="b-check"><label for="interest-rate-swap08"></label>
+                  </div>
+                  <div class="item-cell-ttl">
+                    <span class="txt"><a href="NORDEA_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                  </div>
+                  <div class="item-cell-irs">
+                    <span class="txt">IRS</span>
+                  </div>
+                  <div class="item-cell-qra">
+                    <span class="txt">QRA Scheduled</span>
+                  </div>
+                  <div class="item-cell-date">
+                    <span class="txt">2017/01/18  07:00 AM</span>
+                  </div>
+                  <div class="item-cell-name">
+                    <span class="txt"><i class="ico ico_name-status"></i><a href="#">Alexandres Etchien</a></span>
+                  </div>
+                  <div class="item-cell-docs">
+                    <ul class="documents">
+                      <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                      <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                    </ul>
+                  </div>
+                  <div class="item-cell-set">
+                    <div class="set-menu">
+                      <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!--Queue Item End -->
+
+              </div>
+              <!-- Queue End -->
+
+            </div>
+
+            <div id="tabs-3">
+              <!-- Queue Start -->
+              <div class="queue jsQueueDrag">
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                  <div class="item-cell-check">
+                    <input type="checkbox" id="interest-rate-swap09" class="b-check"><label for="interest-rate-swap09"></label>
+                  </div>
+                  <div class="item-cell-ttl">
+                    <span class="txt"><a href="NORDEA_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                  </div>
+                  <div class="item-cell-irs">
+                    <span class="txt">IRS</span>
+                  </div>
+                  <div class="item-cell-qra">
+                    <span class="txt">QRA Scheduled</span>
+                  </div>
+                  <div class="item-cell-date">
+                    <span class="txt">2017/01/18  07:00 AM</span>
+                  </div>
+                  <div class="item-cell-name">
+                    <span class="txt"><i class="ico ico_name-status"></i><a href="#">Alexandres Etchien</a></span>
+                  </div>
+                  <div class="item-cell-docs">
+                    <ul class="documents">
+                      <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                      <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                    </ul>
+                  </div>
+                  <div class="item-cell-set">
+                    <div class="set-menu">
+                      <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                  <div class="item-cell-check">
+                    <input type="checkbox" id="interest-rate-swap10" class="b-check"><label for="interest-rate-swap10"></label>
+                  </div>
+                  <div class="item-cell-ttl">
+                    <span class="txt"><a href="NORDEA_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                  </div>
+                  <div class="item-cell-irs">
+                    <span class="txt">IRS</span>
+                  </div>
+                  <div class="item-cell-qra">
+                    <span class="txt">QRA Scheduled</span>
+                  </div>
+                  <div class="item-cell-date">
+                    <span class="txt">2017/01/18  07:00 AM</span>
+                  </div>
+                  <div class="item-cell-name">
+                    <span class="txt"><i class="ico ico_name-status"></i><a href="#">Alexandres Etchien</a></span>
+                  </div>
+                  <div class="item-cell-docs">
+                    <ul class="documents">
+                      <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                      <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                    </ul>
+                  </div>
+                  <div class="item-cell-set">
+                    <div class="set-menu">
+                      <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!--Queue Item End -->
+
+                <!--Queue Item Start -->
+                <div class="item line">
+                  <div class="item-cell-check">
+                    <input type="checkbox" id="interest-rate-swap11" class="b-check"><label for="interest-rate-swap11"></label>
+                  </div>
+                  <div class="item-cell-ttl">
+                    <span class="txt"><a href="NORDEA_Interest_Rate_Swap.html">Interest Rate Swap</a></span>
+                  </div>
+                  <div class="item-cell-irs">
+                    <span class="txt">IRS</span>
+                  </div>
+                  <div class="item-cell-qra">
+                    <span class="txt">QRA Scheduled</span>
+                  </div>
+                  <div class="item-cell-date">
+                    <span class="txt">2017/01/18  07:00 AM</span>
+                  </div>
+                  <div class="item-cell-name">
+                    <span class="txt"><i class="ico ico_name-status"></i><a href="#">Alexandres Etchien</a></span>
+                  </div>
+                  <div class="item-cell-docs">
+                    <ul class="documents">
+                      <li><a href="#"><span class="ico iconfont-word"></span>PA</a></li>
+                      <li><a href="#"><span class="ico iconfont-pdf"></span>AML</a></li>
+                    </ul>
+                  </div>
+                  <div class="item-cell-set">
+                    <div class="set-menu">
+                      <a href="#"><i class="ico iconfont-vert-dots"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!--Queue Item End -->
+
+              </div>
+              <!-- Queue End -->
+
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </div>
+
+  <script src="js/plugins/jquery-2.2.4.min.js"></script>
+  <script src="js/plugins/jquery-ui.min.js"></script>
+  <script src="js/plugins/select2.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
