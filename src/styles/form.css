@@ -3,6 +3,13 @@
     background: #edd7d7;
     color: #f00;
 }
+.tab {
+    font-size: 12px;
+    line-height: 20px;
+}
+.current {
+    margin:0;
+}
 .b-input {
     font-size: 13px;
     line-height: 16px;
