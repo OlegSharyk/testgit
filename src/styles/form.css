@@ -10,6 +10,9 @@
 .current {
     margin:0;
 }
+textarea {
+    height: 20px;
+}
 .b-input {
     font-size: 13px;
     line-height: 16px;
