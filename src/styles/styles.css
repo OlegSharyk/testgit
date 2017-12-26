@@ -1,4 +1,3 @@
-<<<<<<<<< Temporary merge branch 1
 .clearfix,
 .clr,
 .line {
@@ -172,6 +171,7 @@ a {
 }
 .hdr {
     padding: 20px 0 34px;
+    margin: 50px;
 }
 .home-page .hdr {
     padding: 20px 0 10px;
