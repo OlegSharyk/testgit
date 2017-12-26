@@ -160,6 +160,7 @@ a {
 .l {
     width: 100%;
     display: inline-block;
+    max-width: 300px;
 }
 .l .l-col1 {
     float: left;
