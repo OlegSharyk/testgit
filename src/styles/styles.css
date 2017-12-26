@@ -176,6 +176,7 @@ a {
 }
 nav {
     float: left;
+    background: #000000;
 }
 .home-page .hdr {
     padding: 20px 0 10px;
