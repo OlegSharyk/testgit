@@ -13,6 +13,9 @@
 textarea {
     height: 20px;
 }
+form {
+    float: right;
+}
 .b-input {
     font-size: 13px;
     line-height: 16px;
