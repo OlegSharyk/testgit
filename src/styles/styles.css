@@ -173,6 +173,9 @@ a {
     padding: 20px 0 34px;
     margin: 50px;
 }
+nav {
+    float: left;
+}
 .home-page .hdr {
     padding: 20px 0 10px;
 }
