@@ -24,6 +24,9 @@
     background-clip: padding-box;
     outline: none;
 }
+.bright {
+    margin: 0;
+}
 .b-input.text-active {
     color: #151515;
 }
